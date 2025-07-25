@@ -1,0 +1,23 @@
+apiVersion: v1
+data:
+    password: ENC[AES256_GCM,data:QR2xTqcKD/o=,iv:VGNEsauCaWmiPxRd1wrOxWI4S8EG4dcOz347sBTa+vs=,tag:aF6wC4fBeMBM3+6NCbtZKw==,type:str]
+    user: ENC[AES256_GCM,data:v/YTcChp04o=,iv:8k5G0BiAyEoNPFOUgJhqTxzcz1QvOlOLew/AXjU6Nk0=,tag:jLi39PlYH7IujaF/T5p0nw==,type:str]
+kind: Secret
+metadata:
+    creationTimestamp: null
+    name: tunnel-credentials
+sops:
+    age:
+        - recipient: age1apkjzd0nu99dg737jsvjnxueeugvehyjtrfcq30xkv2f9cvewcns60xyke
+          enc: |
+            -----BEGIN AGE ENCRYPTED FILE-----
+            YWdlLWVuY3J5cHRpb24ub3JnL3YxCi0+IFgyNTUxOSBEZTdjaTRRVWgwVWR0dlVp
+            ekFsU1FYMzczVmw0dXJqV2ZvZkdOWmZzY2hRCnA4cFlDQ3o2WkgwQ1J5Tm5LM3Nq
+            M0VJVGNyS0JXcFBYell0L09uWXZWSmMKLS0tIFhPalBkWk9RSFI0dVFTRlc3b2xV
+            ZlZaaGZjK2JLMDRiVmU3RTFkcHBjQjAK4cUPSFlAuWnEcd6yZyOci9CoNRo4tZlG
+            Haq+nilnLURbdKQirT1pVgCl1DF8r/Pktu3XmUEs1JUaIDGIonxG0g==
+            -----END AGE ENCRYPTED FILE-----
+    lastmodified: "2025-07-25T16:56:27Z"
+    mac: ENC[AES256_GCM,data:fRAj3Ppd36cHANVGHpnPgzukA4bgIIlNYKM8QzMDBG+OJg7i3QkuS2cn79noqWZWXjdryRUrqNuqY1pKju80vRbMrZqDz/SYOm0joo0uPtalacskMt8u/KWF11pBwEdYgzuumcNYbrA8tBzVZjphPWMWbqfhQQRH/pGioqT44fU=,iv:fmxB87D5vyUg4GeukiEQtage6lIk/vkGXsQeFkmIbzU=,tag:aXOcBDpJ/7AoEMfeT59eDQ==,type:str]
+    encrypted_regex: ^(data|stringData)$
+    version: 3.10.2
