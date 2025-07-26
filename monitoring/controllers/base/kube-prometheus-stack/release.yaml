@@ -37,7 +37,7 @@ spec:
         hosts:
          - grafana.cloudcentral.tech
 
-           # tls:
-           # - secretName: grafana-tls-secret
-           # hosts:
-           # - grafana.cloudcentral.tech
+        tls:
+          - secretName: grafana-tls-secret
+            hosts:
+              - grafana.cloudcentral.tech
