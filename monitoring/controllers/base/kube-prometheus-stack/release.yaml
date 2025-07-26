@@ -31,3 +31,13 @@ spec:
   values:
     grafana:
       adminPassword: mischa
+      ingress:
+        enabled: true
+        ingressClassName: traefik
+        hosts:
+         - grafana.cloudcentral.tech
+
+           # tls:
+           # - secretName: grafana-tls-secret
+           # hosts:
+           # - grafana.cloudcentral.tech
