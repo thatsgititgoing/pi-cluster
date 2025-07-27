@@ -25,13 +25,9 @@ spec:
         name: audiobookshelf
         ports:
         - containerPort: 3005
-        env:
-        - name: APP_PORT
-          valueFrom:
-            configMapKeyRef:
+        envFrom:
+          - configMapKeyRef:
               name: audiobooks-config
-              key: APP_PORT
-
 
         volumeMounts:
           - name: audiobooks-data
