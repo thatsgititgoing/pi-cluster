@@ -5,3 +5,4 @@ resources:
   - ../../base/audiobooks
   - tunnel-creds.yaml
   - tunnel-config.yaml
+  - ingress.yaml
