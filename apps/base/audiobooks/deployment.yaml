@@ -16,6 +16,10 @@ spec:
       labels:
         app: audiobooks
     spec:
+      securityContext:
+        fsGroup: 1000 # node user
+        runAsUser: 1000 # node user
+        runAsGroup: 1000 # node user
       containers:
       - image: ghcr.io/advplyr/audiobookshelf:2.26.1
         name: audiobookshelf
@@ -39,6 +43,8 @@ spec:
           - name: metadata-data
             mountPath: /metadata
 
+        securityContext:
+          allowPrivilegeEscalation: false
 
       volumes:
         - name: audiobooks-data
