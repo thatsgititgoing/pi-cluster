@@ -4,7 +4,7 @@ data:
 kind: Secret
 metadata:
     creationTimestamp: null
-    name: tunnel-credentials
+    name: tunnel-creds
 sops:
     age:
         - recipient: age1apkjzd0nu99dg737jsvjnxueeugvehyjtrfcq30xkv2f9cvewcns60xyke
