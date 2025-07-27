@@ -43,9 +43,6 @@ spec:
           - name: metadata-data
             mountPath: /metadata
 
-        securityContext:
-          allowPrivilegeEscalation: false
-
       volumes:
         - name: audiobooks-data
           persistentVolumeClaim:
