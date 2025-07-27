@@ -3,6 +3,6 @@ kind: Kustomization
 namespace: audiobooks
 resources:
   - ../../base/audiobooks
-  - tunnel-creds.yaml
-  - tunnel-config.yaml
-  - ingress.yaml
+    #- tunnel-creds.yaml
+    #- tunnel-config.yaml
+    #- ingress.yaml
