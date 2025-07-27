@@ -29,18 +29,15 @@ spec:
               key: APP_PORT
 
 
-          volumeMounts:
-            - name: audiobooks-data
-              mountPath: /audiobooks
-
-            - name: podcasts-data
-              mountPath: /podcasts
-
-            - name: config-data
-              mountPath: /config
-
-            - name: metadata-data
-              mountPath: /metadata
+        volumeMounts:
+          - name: audiobooks-data
+            mountPath: /audiobooks
+          - name: podcasts-data
+            mountPath: /podcasts
+          - name: config-data
+            mountPath: /config
+          - name: metadata-data
+            mountPath: /metadata
 
 
       volumes:
