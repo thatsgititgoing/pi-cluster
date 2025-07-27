@@ -4,14 +4,18 @@ metadata:
   name: audiobooks
 spec:
   ingressClassName: traefik
+  tls:
+    - hosts:
+        - audiobooks.cloudcentral.tech
+      secretName: tunnel-creds
   rules:
     - host: audiobooks.cloudcentral.tech
       http:
         paths:
-          - backend:
+          - path: /
+            pathType: Prefix
+            backend:
               service:
                 name: audiobooks
                 port:
                   number: 3005
-            path: /
-            pathType: Prefix
