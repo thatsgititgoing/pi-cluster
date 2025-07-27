@@ -4,3 +4,4 @@ namespace: audiobooks
 resources:
   - ../../base/audiobooks
   - tunnel-creds.yaml
+  - tunnel-config.yaml
