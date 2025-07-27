@@ -7,7 +7,7 @@ spec:
   tls:
     - hosts:
         - hub.cloudcentral.tech
-      secretName: tunnel-credentials  # 👈 This is your TLS secret
+      secretName: tunnel-credentials
   rules:
     - host: hub.cloudcentral.tech
       http:
