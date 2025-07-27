@@ -27,3 +27,35 @@ spec:
             configMapKeyRef:
               name: audiobooks-config
               key: APP_PORT
+
+
+          volumeMounts:
+            - name: audiobooks-data
+              mountPath: /audiobooks
+
+            - name: podcasts-data
+              mountPath: /podcasts
+
+            - name: config-data
+              mountPath: /config
+
+            - name: metadata-data
+              mountPath: /metadata
+
+
+      volumes:
+        - name: audiobooks-data
+          persistentVolumeClaim:
+            claimName: audiobooks-data-pvc
+
+        - name: podcasts-data
+          persistentVolumeClaim:
+            claimName: podcasts-data-pvc
+
+        - name: config-data
+          persistentVolumeClaim:
+            claimName: config-data-pvc
+
+        - name: metadata-data
+          persistentVolumeClaim:
+            claimName: metadata-data-pvc
