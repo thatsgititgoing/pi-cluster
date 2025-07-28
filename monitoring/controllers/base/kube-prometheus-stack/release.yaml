@@ -30,7 +30,10 @@ spec:
           kind: PrometheusRule
   values:
     grafana:
-      adminPassword: mischa
+      admin:
+        existingSecret: grafana-admin-secret
+        userKey: admin-user
+        passwordKey: admin-password
       ingress:
         enabled: true
         ingressClassName: traefik
