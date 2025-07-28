@@ -5,6 +5,7 @@ metadata:
   namespace: monitoring
 spec:
   interval: 30m
+  timeout: 12h
   chart:
     spec:
       chart: kube-prometheus-stack
@@ -16,7 +17,6 @@ spec:
         kind: HelmRepository
         name: kube-prometheus-stack
         namespace: monitoring
-      interval: 12h
   install:
     crds: Create
   upgrade:
